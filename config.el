@@ -34,8 +34,8 @@
   (setq dashboard-set-heading-icons t)
   (setq dashboard-set-file-icons t)
   (setq dashboard-filter-agenda-entry 'dashboard-no-filter-agenda)
-  (setq dashboard-items '((recents . 10)
-	(agenda . 5)
+  (setq dashboard-items '((recents . 5)
+	(agenda . 10)
 	(bookmarks . 5)))
   :config
   (dashboard-setup-startup-hook))
@@ -62,6 +62,7 @@
 (setq auto-save-default nil)
 (setq scroll-conservatively 100)
 (setq ring-bell-function 'ignore)
+(setq org-agenda-files '("~/check-it/life.org"))
 (setq electric-pair-pairs '(
 			    (?\( . ?\))
 			    (?\[ . ?\])
@@ -77,6 +78,7 @@
 (global-prettify-symbols-mode t) 
 (global-hl-line-mode t)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+(global-visual-line-mode t)
 
 (setq ido-enable-flex-matching nil)
 (setq ido-create-new-buffer 'always)

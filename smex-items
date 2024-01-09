@@ -1,16 +1,20 @@
 
 ;; ----- smex-history -----
 (
+ read-only-mode
+ customize-themes
+ org-agenda
+ ansi-term
+ visual-line-mode
  cd
  5x5
- arp
- dbx
- dig
- erc
- ert
 )
 
 ;; ----- smex-data -----
 (
- 
+ (visual-line-mode . 1)
+ (customize-themes . 5)
+ (ansi-term . 1)
+ (org-agenda . 4)
+ (read-only-mode . 1)
 )

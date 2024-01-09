@@ -22,7 +22,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(gruvbox-dark-medium))
  '(custom-safe-themes
-   '("046a2b81d13afddae309930ef85d458c4f5d278a69448e5a5261a5c78598e012" default))
+   '("a5270d86fac30303c5910be7403467662d7601b821af2ff0c4eb181153ebfc0a" "046a2b81d13afddae309930ef85d458c4f5d278a69448e5a5261a5c78598e012" default))
  '(package-selected-packages
    '(spaceline company dashboard avy smex ido-vertical-mode org-bullets gruvbox-theme which-key use-package)))
 (custom-set-faces
