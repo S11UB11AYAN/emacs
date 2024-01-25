@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- read-only-mode
- customize-themes
+ highlight-indent-guides-mode
+ emmet-mode
  org-agenda
- ansi-term
- visual-line-mode
- cd
- 5x5
+ global-display-line-numbers-mode
+ display-line-numbers-mode
+ customize-variable
+ customize-themes
 )
 
 ;; ----- smex-data -----
@@ -15,6 +15,14 @@
  (visual-line-mode . 1)
  (customize-themes . 5)
  (ansi-term . 1)
- (org-agenda . 4)
+ (org-agenda . 7)
  (read-only-mode . 1)
+ (list-packages . 1)
+ (highlight-indent-guides-mode . 10)
+ (highlight-indent-guides-auto-set-faces . 1)
+ (customize-variable . 3)
+ (lsp-mode . 6)
+ (display-line-numbers-mode . 1)
+ (global-display-line-numbers-mode . 3)
+ (emmet-mode . 4)
 )

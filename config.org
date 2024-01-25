@@ -52,9 +52,8 @@
     (setq dashboard-set-heading-icons t)
     (setq dashboard-set-file-icons t)
     (setq dashboard-filter-agenda-entry 'dashboard-no-filter-agenda)
-    (setq dashboard-items '((recents . 5)
-	  (agenda . 10)
-	  (bookmarks . 5)))
+    (setq dashboard-items '((recents . 2)
+	  (agenda . 10)))
     :config
     (dashboard-setup-startup-hook))
 #+end_src
@@ -75,6 +74,53 @@
     (setq powerline-default-separator (quote arrow))
     (spaceline-spacemacs-theme))
 #+end_src
+** evil mode
+#+begin_src emacs-lisp
+  (use-package evil
+    :ensure t)
+#+end_src
+** web mode
+#+begin_src emacs-lisp
+  (use-package web-mode
+    :ensure t)
+#+end_src
+** emmet mode
+#+begin_src emacs-lisp
+  (use-package emmet-mode
+    :ensure t)
+#+end_src
+** js2-mode
+#+begin_src emacs-lisp
+  (use-package js2-mode
+    :ensure t)
+#+end_src
+** lsp-mode
+#+begin_src emacs-lisp
+  (use-package lsp-mode
+    :ensure t)
+#+end_src
+** indent lines
+#+begin_src emacs-lisp
+  (use-package highlight-indent-guides
+    :ensure t)
+#+end_src
+* THEMES
+Installing doom-themes because it contains a huge collection of themes.
+#+begin_src emacs-lisp
+  (add-to-list 'custom-theme-load-path "~/.config/emacs/themes/")
+  (use-package doom-themes
+    :ensure t
+    :config
+    (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+	  doom-themes-enable-italic t)) ; if nil, italics is universally disabled
+#+end_src
+* Enabling Table of Contents
+#+begin_src emacs-lisp
+  (use-package toc-org
+    :ensure t
+    :commands toc-org-enable
+    :init (add-hook 'org-mode-hook 'toc-org-enable))
+#+end_src
 
 * UI changes
 #+begin_src emacs-lisp
@@ -83,6 +129,7 @@
   (scroll-bar-mode -1)
   (line-number-mode 1)
   (column-number-mode 1)
+  (evil-mode 1)
 #+end_src
 
 * QOL
@@ -91,7 +138,7 @@
   (setq auto-save-default nil)
   (setq scroll-conservatively 100)
   (setq ring-bell-function 'ignore)
-  (setq org-agenda-files '("~/check-it/life.org"))
+  (setq org-agenda-files '("~/Life/life.org"))
   (setq electric-pair-pairs '(
 			      (?\( . ?\))
 			      (?\[ . ?\])

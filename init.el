@@ -23,8 +23,9 @@
  '(custom-enabled-themes '(gruvbox-dark-medium))
  '(custom-safe-themes
    '("a5270d86fac30303c5910be7403467662d7601b821af2ff0c4eb181153ebfc0a" "046a2b81d13afddae309930ef85d458c4f5d278a69448e5a5261a5c78598e012" default))
+ '(highlight-indent-guides-method 'character)
  '(package-selected-packages
-   '(spaceline company dashboard avy smex ido-vertical-mode org-bullets gruvbox-theme which-key use-package)))
+   '(highlight-indent-guides lsp-mode js2-mode emmet-mode web-mode spaceline company dashboard avy smex ido-vertical-mode org-bullets gruvbox-theme which-key use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

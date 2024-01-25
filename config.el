@@ -34,9 +34,8 @@
   (setq dashboard-set-heading-icons t)
   (setq dashboard-set-file-icons t)
   (setq dashboard-filter-agenda-entry 'dashboard-no-filter-agenda)
-  (setq dashboard-items '((recents . 5)
-	(agenda . 10)
-	(bookmarks . 5)))
+  (setq dashboard-items '((recents . 2)
+	(agenda . 10)))
   :config
   (dashboard-setup-startup-hook))
 
@@ -52,17 +51,36 @@
   (setq powerline-default-separator (quote arrow))
   (spaceline-spacemacs-theme))
 
+(use-package evil
+  :ensure t)
+
+(use-package web-mode
+  :ensure t)
+
+(use-package emmet-mode
+  :ensure t)
+
+(use-package js2-mode
+  :ensure t)
+
+(use-package lsp-mode
+  :ensure t)
+
+(use-package highlight-indent-guides
+  :ensure t)
+
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (line-number-mode 1)
 (column-number-mode 1)
+(evil-mode 1)
 
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 (setq scroll-conservatively 100)
 (setq ring-bell-function 'ignore)
-(setq org-agenda-files '("~/check-it/life.org"))
+(setq org-agenda-files '("~/Life/life.org"))
 (setq electric-pair-pairs '(
 			    (?\( . ?\))
 			    (?\[ . ?\])
